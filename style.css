@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background: url(./ımage/Aromatherapy\ 12889071_l.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+
+}
+
+figure img {
+    width: 60%;
+}
+
+.navbar .logo {
+
+    display: inline-block;
+    /* inline block dedik aşağıdaki ölçüleri verebilmek için*/
+    margin-left: 50px;
+    margin-top: 5px;
+
+
+}
+
+
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    /*aşağıdaki ölçeklendirmeyi yapmak için verdik*/
+    /* yanyana geldi*/
+    margin: 0 8px;
+    /* aralarını açtım*/
+    line-height: 90px;
+    /* aşağı indirip 80 px hizaladı*/
+
+
+
+}
+
+.container .navbar {
+    width: 100%;
+    height: 100px;
+    background: rgba(18, 18, 17, 0.4);
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /*büyüttük*/
+    padding: 6px 13px;
+    font-family: 'Josefin Slab', serif;
+    transition: .5s;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.navbar ul {
+    float: right;
+    /* menüyü sağa yasladım*/
+    margin-right: 20;
+    /*sağdaki genişlik*/
+    margin-top: 0;
+
+
+}
+
+@media (max-width:768px) {
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        width: 380x;
+        gap: 2px;
+
+    }
+
+    .navbar .logo {
+        margin-left: 5px;
+
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+
+
+        padding: 0;
+    }
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #d49fdd;
+    border-radius: 8px;
+}
+
+
+.container .center {
+    position: absolute;
+    top: 50%;
+    /*yukardan aşağıya indirip  ortaladı*/
+    left: 50%;
+    /*sayfanın ortasıma götürdü.*/
+    transform: translate(-50%, -50%);
+    /*tam ortalama için bunu kullanabiliriz*/
+    font-family: 'Charm', cursive;
+    user-select: none;
+    /*üzerine geldiğinde seçilmesin*/
+
+}
+
+.center h1 {
+    color: rgb(199, 216, 190);
+    font-size: 60px;
+    font-weight: bold;
+    /*kalınlık*/
+    width: 900px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(90, 121, 90);
+}
+
+
+
+.center h2 {
+    color: hwb(319 38% 36%);
+    font-size: 40px;
+    font-weight: bolder;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(127, 82, 117);
+
+
+}
+
+
+.center .buttons {
+    margin: 35px 280px;
+    /*bu şekilde ortaladım*/
+}
+
+.buttons button {
+    margin: 5px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: hwb(319 38% 36%);
+    background: rgb(152, 183, 161);
+    border: solid 1px rgb(56, 121, 55);
+    cursor: pointer;
+    /* el işareti geliyor imleç  butonların üzerine geliyor*/
+    outline: none;
+    border-radius: 25px;
+    transition: .5s;
+    /*üzerine geldiğinde yavaş renk değişimi yaptık*/
+    font-family: 'Charm', cursive;
+}
+
+.buttons button:hover {
+    background: #fff;
+    scale: 1.1;
+
+}
+
+.mp3 {
+    position: absolute;
+    margin-top: -60px;
+
+}

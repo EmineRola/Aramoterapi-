@@ -2,4 +2,4 @@
 
 Html, Css
 
-![](ekran.gif)
+![](ekran2.gif)
